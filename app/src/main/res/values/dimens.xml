@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_margin">8dp</dimen>
+
+    <dimen name="horizontal_space">10dp</dimen>
+    <dimen name="vertical_space">10dp</dimen>
+
+    <dimen name="widget_height">180dp</dimen>
+    <dimen name="widget_width">180dp</dimen>
+
+    <dimen name="single_view_padding">19dp</dimen>
+    <dimen name="single_view_height">408dp</dimen> <!-- 370dp + 19dp +19dp = 408dp -->
+    <dimen name="single_view_width">408dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="widget_placeholder_width">370dp</dimen>
+    <dimen name="widget_placeholder_height">370dp</dimen>
+    <dimen name="dashboard_edit_mode_edit_mode_text_margin_top">42dp</dimen>
+
+    <dimen name="statusbar_icon_space">21dp</dimen>
+    <dimen name="statusbar_icon_margin_top">13dp</dimen>
+    <dimen name="statusbar_icon_margin">16dp</dimen>
+    <dimen name="statusbar_height">227dp</dimen>
+
+    <dimen name="button_normal_width">324dp</dimen>
+    <dimen name="button_normal_height">64dp</dimen>
+    <dimen name="button_back_height">73dp</dimen>
+    <dimen name="button_dialog_width">455dp</dimen>
+    <dimen name="button_corner_radius">46dp</dimen>
+    <!--<dimen location="button_">1dp</dimen>-->
+    <dimen name="button_stroke_size">1dp</dimen>
+    <dimen name="widget_stroke_size">3dp</dimen>
+    <dimen name="widget_edit_empty_stroke">3dp</dimen>
+    <dimen name="dashboard_add_items_dialog_tab_height">146dp</dimen>
+    <dimen name="dashboard_add_items_dialog_tab_width">272dp</dimen>
+    <dimen name="dashboard_add_items_dialog_padding_left">51dp</dimen>
+    <dimen name="dashboard_add_items_dialog_padding_right">51dp</dimen>
+
+    <dimen name="scrollbar_size">14dp</dimen>
+    <dimen name="dashboard_add_items_dialog_width">765dp</dimen>
+    <dimen name="dashboard_add_items_dialog_height">1012dp</dimen>
+
+    <dimen name="navbar_width">113dp</dimen>
+
+    <dimen name="bg_setting_bottom_padding">184dp</dimen>
+    <dimen name="settings_separator_height">1dp</dimen>
+    <dimen name="settings_height">80dp</dimen>
+    <dimen name="settings_toggle_button_background_stroke">1dp</dimen>
+    <dimen name="settings_toggle_button_background_radius">28dp</dimen>
+
+    <dimen name="settings_toggle_button_width">120dp</dimen>
+    <dimen name="settings_toggle_button_height">56dp</dimen>
+    <dimen name="settings_toggle_button_divider_height">40dp</dimen>
+    <dimen name="settings_toggle_button_divider_width">1dp</dimen>
+
+    <dimen name="settings_padding">33dp</dimen>
+    <dimen name="settings_color_wheel_width">518dp</dimen>
+
+    <dimen name="weather_configure_padding">33dp</dimen>
+</resources>

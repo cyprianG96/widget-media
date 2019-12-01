@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="tabColorUnselected">#7e49df</color>
+    <color name="tabColorSelected">#FFFFFF</color>
+    <color name="dialogOverlay">#B3000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white_100">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="black_100">#FF000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="black_0">#00000000</color>
+    <color name="backgroundBase">#0d0c20</color>
+
+    <color name="transparent">@android:color/transparent</color>
+    <color name="realTranslucent">#00000000</color>
+
+    <color name="textNormal">@color/white_100</color>
+    <color name="textPressed">@color/white_100</color>
+    <color name="textDisabled">@color/white_30</color>
+
+    <color name="scrollbar_thumb">#7d48dd</color>
+    <color name="scrollbar_track">#337d48dd</color>
+
+    <color name="widget_list_item">#fefefe</color>
+
+
+    <!--100% — FF-->
+    <!--95% — F2-->
+    <!--90% — E6-->
+    <!--85% — D9-->
+    <!--80% — CC-->
+    <!--75% — BF-->
+    <!--70% — B3-->
+    <!--65% — A6-->
+    <!--60% — 99-->
+    <!--55% — 8C-->
+    <!--50% — 80-->
+    <!--45% — 73-->
+    <!--40% — 66-->
+    <!--35% — 59-->
+    <!--30% — 4D-->
+    <!--25% — 40-->
+    <!--20% — 33-->
+    <!--15% — 26-->
+    <!--10% — 1A-->
+    <!--5% — 0D-->
+    <!--0% — 00-->
+
+</resources>

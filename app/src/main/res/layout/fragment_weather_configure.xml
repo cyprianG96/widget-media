@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialogOverlay"
+    android:paddingStart="@dimen/navbar_width"
+    tools:background="@color/dialogOverlay"
+    tools:context=".weather.WeatherConfigureFragment">
+
+    <com.mobica.widgets.views.OvalButton
+        android:id="@+id/ovalButton_Settings_Close"
+        style="@style/OvalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toTopOf="@+id/content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="@dimen/dashboard_add_items_dialog_width"
+        android:layout_height="@dimen/dashboard_add_items_dialog_height"
+        android:paddingStart="@dimen/weather_configure_padding"
+        android:paddingEnd="@dimen/weather_configure_padding"
+        android:background="?drawable_dashboardDialogBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/searchEdit"
+            style="@style/SearchEdit"
+            android:hint="Search name"
+            android:textColorHint="#fff"
+            android:paddingStart="27dp"
+            android:layout_marginTop="44dp"
+            android:drawableStart="@drawable/ic_icon_search"
+            android:drawablePadding="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.mobica.widgets.views.OvalButton
+            android:id="@+id/clearButton"
+            style="@style/OvalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:layout_marginEnd="19dp"
+            app:layout_constraintTop_toTopOf="@id/searchEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/searchEdit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/currentLocation"
+            style="@style/CurrentLocation"
+            tools:text="Current Location"
+            android:drawableStart="@drawable/ic_location_icon_big"
+            android:drawablePadding="42dp"
+            android:paddingStart="32dp"
+            android:layout_width="680dp"
+            android:layout_height="92dp"
+            app:layout_constraintTop_toBottomOf="@id/searchEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/separator"
+            android:background="#fff"
+            android:layout_width="680dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/currentLocation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchList"
+            android:layout_width="680dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="66dp"
+
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+            android:scrollbarTrackVertical="@drawable/scrollbar_track"
+            android:scrollbarSize="14dp"
+
+            tools:listitem="@layout/list_item_search_weather_location"
+            app:layout_constraintTop_toBottomOf="@id/separator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/selectButton"/>
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectButton"
+            style="@style/NormalButton"
+            android:text="SELECT"
+            android:layout_width="455dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="49dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

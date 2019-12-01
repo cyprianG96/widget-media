@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_bg"
+        android:layout_margin="1dp" />
+
+    <ImageView
+        android:id="@+id/bg_today"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_bg_today"
+        android:layout_margin="1dp" />
+
+    <ImageView
+        android:id="@+id/bg_holiday"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_bg_holiday"
+        android:layout_margin="1dp" />
+
+    <TextView
+        android:id="@+id/day"
+        style="@style/CarTextNormal"
+        android:textSize="28sp"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_margin="1dp"
+        android:paddingBottom="2dp"
+        android:gravity="center|bottom"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/dot1"
+            android:src="@drawable/dot_shape"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/dot2"
+            android:src="@drawable/dot_shape"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/dot3"
+            android:src="@drawable/dot_shape"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

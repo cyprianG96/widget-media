@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#f00"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/trip"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/navDistanceLabel"
+            style="@style/NavLabel"
+            android:text="Distance"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/navDistanceValue"
+            style="@style/NavValue"
+            android:text="300 km"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/navDistanceLabel" />
+
+        <TextView
+            android:id="@+id/navEstArrivalLabel"
+            style="@style/NavLabel"
+            android:text="Est. arrival"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/navEstArrivalValue"
+            style="@style/NavValue"
+            android:text="11:35"
+            android:layout_marginRight="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/navEstArrivalLabel" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage1"
+            android:visibility="gone"
+            android:src="@drawable/round_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage2"
+            android:visibility="gone"
+            android:src="@drawable/round_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage3"
+            android:visibility="gone"
+            android:src="@drawable/round_stright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage4"
+            android:visibility="gone"
+            android:src="@drawable/stright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage5"
+            android:visibility="gone"
+            android:src="@drawable/turn_left_slight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage6"
+            android:visibility="gone"
+            android:src="@drawable/turn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage7"
+            android:visibility="gone"
+            android:src="@drawable/turn_left_sharp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage8"
+            android:visibility="gone"
+            android:src="@drawable/turn_uturn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage9"
+            android:visibility="gone"
+            android:src="@drawable/turn_right_slight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage10"
+            android:visibility="gone"
+            android:src="@drawable/turn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage11"
+            android:visibility="gone"
+            android:src="@drawable/turn_right_sharp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <ImageView
+            android:id="@+id/navManeuverImage12"
+            android:visibility="gone"
+            android:src="@drawable/turn_uturn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/navManeuverDistance" />
+
+        <TextView
+            android:id="@+id/navManeuverDistance"
+            style="@style/NavValue"
+            android:text="50 m"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/navThenLayout"/>
+
+        <TextView
+            android:id="@+id/navManeuverPlace"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/navThenLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/navThenValue"
+                style="@style/NavLabelBig"
+                android:text="then"
+                android:layout_marginRight="14dp"
+                android:paddingBottom="9dp"
+                android:layout_gravity="bottom"/>
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage1"
+                android:visibility="gone"
+                android:src="@drawable/round_left_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage2"
+                android:visibility="gone"
+                android:src="@drawable/round_right_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage3"
+                android:visibility="gone"
+                android:src="@drawable/round_stright_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage4"
+                android:visibility="gone"
+                android:src="@drawable/stright_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage5"
+                android:visibility="gone"
+                android:src="@drawable/turn_left_slight_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage6"
+                android:visibility="gone"
+                android:src="@drawable/turn_left_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage7"
+                android:visibility="gone"
+                android:src="@drawable/turn_left_sharp_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage8"
+                android:visibility="gone"
+                android:src="@drawable/turn_uturn_left_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage9"
+                android:visibility="gone"
+                android:src="@drawable/turn_right_slight_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage10"
+                android:visibility="gone"
+                android:src="@drawable/turn_right_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage11"
+                android:visibility="gone"
+                android:src="@drawable/turn_right_sharp_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/navThenManeuverImage12"
+                android:visibility="gone"
+                android:src="@drawable/turn_uturn_right_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noTrip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/route_bg_small"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/navPlanRoute"
+            android:src="@drawable/ic_plan_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="97dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Plan a route"
+            style="@style/NavLocation"
+            android:layout_marginTop="44dp"
+            android:layout_below="@id/navPlanRoute"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

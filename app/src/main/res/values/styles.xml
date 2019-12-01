@@ -1,0 +1,231 @@
+<resources>
+
+    <style name="AppThemeBlue" parent="Theme.Transparent">
+        <item name="drawable_dashboardDialogBackground">@drawable/dialog_bg_blue</item>
+    </style>
+
+    <style name="AppThemePurple" parent="AppThemeBlue">
+        <item name="drawable_dashboardDialogBackground">@drawable/dialog_bg_purple</item>
+    </style>
+
+    <style name="AppThemeGreen" parent="AppThemeBlue">
+        <item name="drawable_dashboardDialogBackground">@drawable/dialog_bg_green</item>
+    </style>
+
+    <style name="EventRow">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="EventTime" parent="CarTextNormal">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingStart">9dp</item>
+    </style>
+
+    <style name="EventLabel" parent="CarTextNormal">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingStart">6dp</item>
+    </style>
+
+    <style name="EventSeparator" >
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">#191732</item>
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">27dp</item>
+    </style>
+
+    <style name="DayDate" parent="CarTextNormal">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DayLabel" parent="CarTextNormal">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DayName" parent="CarTextNormal">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="NavLabel" parent="CarTextNormal">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">59.5sp</item>
+    </style>
+
+    <style name="NavLabelBig" parent="NavLabel">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.05</item>
+        <item name="android:lineSpacingExtra">51.5sp</item>
+    </style>
+
+    <style name="NavLocation" parent="NavLabel">
+        <item name="android:textSize">42sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">10.5sp</item>
+    </style>
+
+    <style name="NavValue" parent="CarTextNormal">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:letterSpacing">-0.05</item>
+        <item name="android:lineSpacingExtra">51.5sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/CarTextBase</item>
+
+    </style>
+
+    <style name="CarTextBase" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/jura_medium</item>
+    </style>
+
+    <style name="CarTextNormal" parent="CarTextBase">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white_100</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:lineSpacingExtra">18sp</item>
+    </style>
+
+    <style name="JuraTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/jura_medium</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- added because of settings -->
+
+    <style name="JuraTextMedium" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/jura_medium</item>
+    </style>
+
+    <style name="ListItemToggleLabel" parent="JuraTextMedium">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:lineSpacingExtra">23.5sp</item>
+        <item name="android:textColor">@color/white_100</item>
+    </style>
+
+    <style name="ListItemTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:lineSpacingExtra">23.5sp</item>
+        <item name="android:textColor">@color/white_100</item>
+    </style>
+
+    <style name="BigButtonText" parent="JuraTextMedium">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/white_100</item>
+        <item name="android:lineSpacingExtra">17.5sp</item>
+    </style>
+
+    <style name="OvalButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/selector_button_oval</item>
+        <item name="android:width">@dimen/button_normal_height</item>
+        <item name="android:height">@dimen/button_normal_height</item>
+    </style>
+
+    <style name="BaseButton" parent="android:Widget.Button">
+        <item name="android:textSize">36sp</item>
+        <item name="android:lineSpacingExtra">18sp</item>
+        <item name="android:fontFamily">@font/jura_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/btn_color_selector</item>
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <style name="NormalButton" parent="BaseButton">
+        <item name="android:width">@dimen/button_normal_width</item>
+        <item name="android:height">@dimen/button_normal_height</item>
+        <item name="android:layout_width">@dimen/button_normal_width</item>
+        <item name="android:layout_height">@dimen/button_normal_height</item>
+    </style>
+
+    <style name="SearchEdit" parent="NormalButton">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_width">680dp</item>
+        <item name="android:layout_height">92dp</item>
+    </style>
+
+    <style name="ClearButton" parent="NormalButton">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+    </style>
+
+    <style name="SearchItem" parent="CarTextNormal">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#fefefe</item>
+        <item name="android:lineSpacingExtra">17.5sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">101dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="CurrentLocation" parent="CarTextNormal">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#fefefe</item>
+        <item name="android:lineSpacingExtra">17.5sp</item>
+        <item name="android:paddingStart">101dp</item>
+        <item name="android:gravity">start|center</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- enable touch outside, space around etc, if disabled layout brings responsibility for that -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- background behind dialog -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowFrame">@null</item>-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- works if dim enabled is true, black around dialog, alpha 70% -->
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+</resources>

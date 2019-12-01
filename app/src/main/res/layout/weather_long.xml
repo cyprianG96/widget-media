@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="370dp"
+    tools:layout_width="800dp">
+
+    <ImageView
+        android:id="@+id/sun_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sun_bg_big" />
+
+    <ImageView
+        android:id="@+id/cloud_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cloud_bg_big" />
+
+    <ImageView
+        android:id="@+id/rain_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rain_bg_big" />
+
+    <TextView
+        android:id="@+id/weatherDegreesNumber"
+        style="@style/CarTextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="25"
+        android:textColor="@android:color/white"
+        android:textSize="144.5sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/weatherDegreesSymbol"
+        style="@style/CarTextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/weatherDegreesNumber"
+        android:layout_toEndOf="@id/weatherDegreesNumber"
+        android:text="°"
+        android:textColor="@android:color/white"
+        android:textSize="144.5sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weatherFeelsLike"
+        style="@style/CarTextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Feels like 26°"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="-50dp"
+        android:layout_marginEnd="-50dp"
+        android:layout_alignStart="@id/weatherDegreesNumber"
+        android:layout_alignEnd="@id/weatherDegreesNumber"
+        android:textSize="32sp"
+        android:layout_below="@id/weatherDegreesNumber"/>
+
+    <LinearLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/weatherDegreesNumber"
+        android:layout_alignBottom="@id/weatherFeelsLike"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="399dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weatherType"
+            style="@style/CarTextNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Light rain"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weatherHumidity"
+            style="@style/CarTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Humidity: 57%"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/weatherPressure"
+            style="@style/CarTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pressure: 1015 hPa"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/weatherWind"
+            style="@style/CarTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wind: 14 km/h SSE"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weatherLocation"
+            style="@style/CarTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableStart="@drawable/ic_location_icon"
+            android:drawablePadding="18dp"
+            android:text="Łódź, Poland"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="188dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>

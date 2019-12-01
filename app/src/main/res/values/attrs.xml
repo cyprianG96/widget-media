@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomMobicaTheme">
+        <!-- Selectors -->
+        <attr name="selector_navBarHome" format="reference" />
+        <attr name="selector_navBarNavi" format="reference" />
+        <attr name="selector_navBarMedia" format="reference" />
+        <attr name="selector_navBarRadio" format="reference" />
+        <attr name="selector_navBarPhone" format="reference" />
+        <attr name="selector_navBarParking" format="reference" />
+        <attr name="selector_navBarSettings" format="reference" />
+        <attr name="selector_navBarHvac" format="reference" />
+
+        <!-- Drawables -->
+        <attr name="drawable_navBarIndicator" format="reference" />
+        <attr name="drawable_navBarIndicatorMirror" format="reference" />
+        <attr name="drawable_launcherDivider" format="reference" />
+        <attr name="drawable_dashboardStroke" format="reference" />
+        <attr name="drawable_dashboardStrokeMirror" format="reference" />
+        <attr name="drawable_dashboardWidgetStroke" format="reference" />
+        <attr name="drawable_dashboardWidgetStrokeSelected" format="reference" />
+        <attr name="drawable_dashboardWidgetStrokeGap" format="reference" />
+        <attr name="drawable_dashboardDialogBackground" format="reference" />
+
+        <!-- Colors -->
+        <attr name="color_buttonBackground" format="color" />
+        <attr name="color_buttonOvalBackground" format="color" />
+        <attr name="color_dialogItemHighlightStart" format="color" />
+        <attr name="color_dialogItemHighlightEnd" format="color" />
+        <attr name="color_dialogTabText" format="color" />
+        <attr name="color_splitDropArea" format="color" />
+        <attr name="color_singleSettingBackground" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SingleSetting">
+        <attr name="singleSettingIcon" format="reference" />
+        <attr name="singleSettingLabel" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SingleSettingSwitch">
+        <attr name="singleSettingSwitchIcon" format="reference" />
+        <attr name="singleSettingSwitchLabel" format="reference" />
+    </declare-styleable>
+
+
+</resources>

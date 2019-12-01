@@ -1,0 +1,23 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_MODULE := mobicawidgets
+
+LOCAL_CERTIFICATE := platform
+
+LOCAL_SRC_FILES := apk/app-debug.apk
+
+LOCAL_USE_AAPT2 := true
+
+LOCAL_PROGUARD_ENABLED := disabled
+
+LOCAL_DEX_PREOPT := false
+
+LOCAL_MODULE_CLASS := APPS
+
+LOCAL_MODULE_SUFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+
+include $(BUILD_PREBUILT)

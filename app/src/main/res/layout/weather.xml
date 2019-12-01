@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="370dp"
+    tools:layout_width="370dp">
+
+    <ImageView
+        android:id="@+id/sun_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sun_bg_small" />
+
+    <ImageView
+        android:id="@+id/cloud_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cloud_bg_small" />
+
+    <ImageView
+        android:id="@+id/rain_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rain_bg_small" />
+
+    <TextView
+        android:id="@+id/weatherDegreesNumber"
+        style="@style/CarTextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="25"
+        android:textColor="@android:color/white"
+        android:textSize="144.5sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weatherDegreesSymbol"
+        style="@style/CarTextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/weatherDegreesNumber"
+        android:layout_toEndOf="@id/weatherDegreesNumber"
+        android:text="°"
+        android:textColor="@android:color/white"
+        android:textSize="144.5sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="188dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weatherFeelsLike"
+            style="@style/CarTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Feels like 26°"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/weatherType"
+            style="@style/CarTextNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Light rain"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weatherLocation"
+            style="@style/CarTextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/ic_location_icon"
+            android:drawablePadding="18dp"
+            android:text="Łódź, Poland"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="188dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>
